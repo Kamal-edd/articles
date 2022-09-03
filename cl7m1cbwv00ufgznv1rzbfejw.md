@@ -21,8 +21,8 @@ that will open up the file in this path `C:\xampp\apache\conf\httpd.conf` (that 
 
 we will uncomment the following lines:
 
-`LoadModule proxy_module modules/mod_proxy.so`
-`LoadModule proxy_ajp_module modules/mod_proxy_ajp.so`
+`LoadModule proxy_module modules/mod_proxy.so` 
+`LoadModule proxy_ajp_module modules/mod_proxy_ajp.so` 
 `LoadModule proxy_balancer_module modules/mod_proxy_balancer.so`
 `LoadModule proxy_connect_module modules/mod_proxy_connect.so`
 `LoadModule proxy_express_module modules/mod_proxy_express.so`
@@ -40,13 +40,13 @@ we will also uncomment a few other lines in a bit, but this will be enough for n
 
 we’ll also need to change the hostname setting, so go to this file `C:\xampp\apache\conf\extra\httpd-ssl.conf` or press the **Config** button again this time selecting the option `Apache (httpd-ssl.conf)`
 
-in there we will replace this line `ServerName [www.example.com:443](http://www.example.com:443/)` with this one `ServerName [localhost:443](http://localhost:443)` because we don’t have a Domain name that we can associet to our proxy.
+in there we will replace this line `ServerName www.example.com:443` with this one `ServerName localhost:443` because we don’t have a Domain name that we can associet to our proxy.
 
 now the config is almost ready, but we still need to add afew things, lets open up this file now `C:\xampp\apache\conf\extra\httpd-vhosts`to add a proxy host,
 
 *btw you can browse to this `C:\xampp\apache\` folder by pressing the config button and selecting the option `<Browse> [Apache]` and click your way from there.*
 
-to the bottom of that file you’ve fust opened add the following pack:
+to the bottom of that file you’ve just opened add the following pack:
 
 ```markup
 <VirtualHost *:*>
