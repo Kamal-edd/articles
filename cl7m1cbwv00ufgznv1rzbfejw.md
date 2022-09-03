@@ -13,28 +13,13 @@ as of now, we don’t have our **Apache service** installed, so let’s go ahead
 
 ![02.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662214866124/autLJCoWg.png align="left")
 
-once done, the ❌ will be replaced by a ✅, now we can configure it by pressing the **Config** button and selecting the option `Apache (httpd.conf)`
+once done, the ❌ will be replaced by a ✅, now we can configure it by pressing the **Config** button and selecting the option `Apache (httpd.conf)`.
 
 ![03.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1662214882992/d1g7myOiX.png align="left")
 
 that will open up the file in this path `C:\xampp\apache\conf\httpd.conf` (that is ofc if you left the installation directory as default during installation process, which defaults to `C:/` ), this file is populated with config statements, notice how some lines are commented using a hash #, we will be uncommenting a few to load modules needed for enabling proxy.
 
-we will uncomment the following lines:
-
-`LoadModule proxy_module modules/mod_proxy.so` 
-`LoadModule proxy_ajp_module modules/mod_proxy_ajp.so` 
-`LoadModule proxy_balancer_module modules/mod_proxy_balancer.so`
-`LoadModule proxy_connect_module modules/mod_proxy_connect.so`
-`LoadModule proxy_express_module modules/mod_proxy_express.so`
-`LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so`
-`LoadModule proxy_ftp_module modules/mod_proxy_ftp.so`
-`LoadModule proxy_hcheck_module modules/mod_proxy_hcheck.so`
-`LoadModule proxy_html_module modules/mod_proxy_html.so`
-`LoadModule proxy_http_module modules/mod_proxy_http.so`
-`LoadModule proxy_http2_module modules/mod_proxy_http2.so`
-`LoadModule proxy_scgi_module modules/mod_proxy_scgi.so`
-`LoadModule proxy_uwsgi_module modules/mod_proxy_uwsgi.so`
-`LoadModule proxy_wstunnel_module modules/mod_proxy_wstunnel.so`
+we will uncomment all the lines that begin with`LoadModule proxy_`, one way to easily do that is to press Ctrl key + h to open the replace window and replace `#LoadModule proxy_` with `LoadModule proxy_`.
 
 we will also uncomment a few other lines in a bit, but this will be enough for now, so just save and exit.
 
