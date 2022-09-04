@@ -1,10 +1,12 @@
 ---
 title: Apache forward proxy
 subtitle: simple and easy using XAMPP
-slug: Apache_forward_proxy_gh
+slug: CApache_forward_proxy_gh
 tags: apache, proxy, forward-proxy, Devops
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1662250772814/0rlS5aYYK.png?auto=compress
 domain: https://kamaledd.hashnode.dev
+publishAs: KamalEdd 
+canonical: 
 ---
 
 # Apache forward proxy
