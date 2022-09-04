@@ -1,3 +1,13 @@
+---
+title: Apache forward proxy
+subtitle: simple and easy using XAMPP
+slug: Apache_forward_proxy_gh
+tags: apache, proxy, forward-proxy, Devops
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1662250772814/0rlS5aYYK.png?auto=compress
+domain: https://kamaledd.hashnode.dev
+/*ignorePost: true*/
+---
+
 # Apache forward proxy
 
 this is a quick walkthrough setting up Apache Forward Proxy on your windows machine. I'm on windows 11, but I suppose this could still work in previous versions of windows.
